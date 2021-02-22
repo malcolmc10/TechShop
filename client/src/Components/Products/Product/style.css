@@ -2,6 +2,8 @@
   background-color: #121212;
   color: #c9d1d9;
   transition: all 0.5s ease-in-out;
+  /* height: 260px;
+  width: 260px; */
 }
 
 .MuiCard-root.product-card:hover {

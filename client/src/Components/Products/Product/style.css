@@ -67,7 +67,7 @@
   text-overflow: ellipsis;
 }
 
-.custom-card .card-image{
+.custom-card .card-image {
   padding: 10px 10px 0 10px;
 }
 
@@ -86,6 +86,10 @@
 .custom-card .basket-item-price {
   color: #03dac5;
   margin-bottom: 0;
+}
+
+.actions-content {
+  display: flex;
 }
 
 .actions-content h2 {
@@ -109,4 +113,3 @@
   color: #03dac5;
   border-color: #03dac5;
 }
-

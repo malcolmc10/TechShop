@@ -1,5 +1,5 @@
-import { ShoppingCart, Typography } from "@material-ui/core";
-import { Container, AppBar, Toolbar, IconButton, Badge, Typography, } from "@material-ui/core";
+import { ShoppingCart } from "@material-ui/icons";
+import { Container, AppBar, Toolbar, IconButton, Badge, Typography} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./style.css";
 import Orange from "./orange.svg"
@@ -23,6 +23,7 @@ const Navbar = ({ basketItems, totalCost }) => {
                 className="logo" />
               </Typography>
             <div className="basket-wrapper">
+              <h2>Total cost: <strong>{totalCost}</strong></h2>
               <IconButton component={Link} to="/basket" aria-label="show basket contents" color="inherit">
                 <Badge badgeContent={basketItems} color="secondary">
                   <ShoppingCart className="custom-basket"/>

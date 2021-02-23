@@ -2,7 +2,9 @@
 import { useState, useEffect } from 'react';
 import { commerce } from "./lib/commerce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Products from './Components/Products'
+import Products from './Components/Products';
+import Navbar from './Navbar';
+
 
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
 
     <Router>
       <div>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Products products={products}/>
